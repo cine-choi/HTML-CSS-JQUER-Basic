@@ -6,7 +6,11 @@ body {
   align-items: center;
   height: 100vh;
 }
+.container {
+  display: flex;
+}
 .square {
+  margin: 40px;
   width: 400px;
   height: 400px;
   position: relative;
@@ -20,9 +24,17 @@ body {
   transition: 0.5s;
 
 }
-.square:hover span{
-  /* background-color: crimson; */
+.square:nth-child(1):hover span{
+  background-color: crimson;
   border:none
+}
+.square:nth-child(2):hover span{
+  background-color: darkcyan;
+  border:none;
+}
+.square:nth-child(3):hover span{
+  background-color: yellowgreen;
+  border: none;
 }
 .square span:nth-child(1) {
   animation: circle 6s linear infinite;
@@ -35,15 +47,12 @@ body {
   animation: circle 10s linear infinite;
 }
 .square:hover span:nth-child(1) {
-  background-color: crimson;
   opacity: 0.3;
 }
 .square:hover span:nth-child(2) {
-  background-color: dodgerblue;
   opacity: 0.6;
 }
 .square:hover span:nth-child(3) {
-  background-color: yellowgreen;
   opacity: 0.8;
 }
 @keyframes circle {
