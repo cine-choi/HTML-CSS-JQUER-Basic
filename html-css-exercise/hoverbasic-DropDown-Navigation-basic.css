@@ -1,0 +1,36 @@
+body {
+  color: #222;
+  line-height: 1.5em;
+}
+a{
+  color: #222;
+  text-decoration: none;
+}
+.dropdown {
+  display: inline-block;
+}
+.dropdown-btn {
+  width: inherit;
+  padding: 10px;
+  font-size: 18px;
+  background-color: yellowgreen;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.dropdown-submemu {
+  display: none;
+  width: inherit;
+}
+.dropdown-submemu a {
+  display: block;
+  padding: 7px;
+  text-align: center;
+}
+.dropdown-submemu a:hover {
+  background-color: #eee;
+}
+.dropdown:hover .dropdown-submemu {
+  display: block;
+}
