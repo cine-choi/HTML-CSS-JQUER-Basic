@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>애니메이션 스킬 프로그래스바-delay</title>
+  <style>
+    @import
+    url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+    body {
+      font-family: 'Raleway', sans-serif;
+      background-color: #fff;
+      line-height: 1.5em;
+      margin: 0;
+    }
+    .skill-progress{
+      width: 500px;
+      padding: 20px;
+      background-color: #333;
+      border-radius: 10px;
+      color: white;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.007);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .skill-progress h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 40px;
+      font-weight: normal;
+    }
+    .item p {
+      overflow: hidden;
+      margin-bottom: 5px;
+    }
+    .item p span:nth-child(1) {
+      float: left;
+    }
+    .item p span:nth-child(2) {
+      float: right;
+    }
+    .progress {
+      border: 1px solid #6cd;
+      padding: 5px;
+      border-radius: 3px;
+    }
+    .progress-level {
+      animation: ani 1s ;
+      animation-fill-mode: both; 
+      /* 100%에 머물러라 */
+      height: 10px;
+      background: linear-gradient(to right, crimson, gold)
+    }
+    @keyframes ani {
+      0% {
+        width: 0;
+      }
+    }
+    .skill-progress .item:nth-of-type(1) .progress-level {
+      animation-delay: 0s;
+    }
+    .skill-progress .item:nth-of-type(2) .progress-level {
+      animation-delay: 0.2s;
+    }
+    .skill-progress .item:nth-of-type(3) .progress-level {
+      animation-delay: 0.4s;
+    }
+    .skill-progress .item:nth-of-type(4) .progress-level {
+      animation-delay: 0.6s;
+    }
+    .skill-progress .item:nth-of-type(5) .progress-level {
+      animation-delay: 0.8s;
+    }
+  </style>
+</head>
+<body>
+  <div class="skill-progress">
+    <h1>SOFTWARE SKILLS</h1>
+    <div class="item">
+      <p>
+        <span>HTML5</span><span>90%</span>
+      </p>
+      <div class="progress">
+        <div class="progress-level" style="width: 90%;"></div>
+      </div>
+    </div>
+    <div class="item">
+      <p>
+        <span>CSS3</span><span>80%</span>
+      </p>
+      <div class="progress">
+        <div class="progress-level" style="width: 80%;" ></div>
+      </div>
+    </div>
+    <div class="item">
+      <p>
+        <span>jQuery</span><span>65%</span>
+      </p>
+      <div class="progress">
+        <div class="progress-level" style="width: 65%;" ></div>
+      </div>
+    </div>
+    <div class="item">
+      <p>
+        <span>Photoshop</span><span>70%</span>
+      </p>
+      <div class="progress">
+        <div class="progress-level" style="width: 70%;" ></div>
+      </div>
+    </div>
+    <div class="item">
+      <p>
+        <span>Illustrator</span><span>82%</span>
+      </p>
+      <div class="progress">
+        <div class="progress-level" style="width: 82%;" ></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
