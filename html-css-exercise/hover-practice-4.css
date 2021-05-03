@@ -1,0 +1,84 @@
+@import
+url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+body {
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  line-height: 1.5em;
+  font-weight: 300;
+  font-size: 15px;
+  margin: 0;
+  background-color: #222;
+}
+a {
+  color: #222;
+  text-decoration: none; 
+}
+.items {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+.item {
+  width: 300px;
+  height: 200px;
+  display: inline-block;
+  position: relative;
+  margin: 10px;
+}
+.front,
+.back {
+  position: absolute;
+  transition: 0.5s;
+  top: 0;
+}
+.front {
+  background-color: #333;
+  text-align: center;
+  height: inherit;
+  width: 100%;
+  z-index: 1;
+}
+.item:hover .front img {
+  animation: ani 1s linear infinite;
+}
+.front h2 {
+  margin-top: 0;
+}
+.back {
+  background-color: white;
+  color: black;
+  height: inherit;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  opacity: 0;
+}
+.back a {
+  background-color: yellowgreen;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+.back a:hover {
+  background-color: #000;
+}
+.item:hover .front {
+  top: -50%;
+}
+.item:hover .back {
+  top: 50%;
+  opacity: 1;
+}
+
+@keyframes ani {
+  0%, 100% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
