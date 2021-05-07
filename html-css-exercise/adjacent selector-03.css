@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.tab-inner {
+  width: 300px;
+  height: 350px;
+  position: relative;
+}
+input[name=tabmenu]{
+  display: none;
+}
+.content{
+  display: none;
+}
+.btn{
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+.btn label {
+  background-color: lightgray;
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  border-radius: 50%;
+  cursor: pointer;
+}
+input[id=tab1]:checked ~ .slide1,
+input[id=tab2]:checked ~ .slide2,
+input[id=tab3]:checked ~ .slide3 {
+  display: block;
+} 
+input[id=tab1]:checked ~ .btn label[for=tab1],
+input[id=tab2]:checked ~ .btn label[for=tab2],
+input[id=tab3]:checked ~ .btn label[for=tab3] {
+  background-color: crimson;
+}
+
+/* tab-inner 부모요소  height350을 준건 버튼 자리 
+position-absoulute를 주는 순간 줄어들기 떄문에 width값을 다시 줘야지 text center를 줄수 있다.  */

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="adjacent selector-03.css">
+  <title>1) 인접선택자 -탭 메뉴- SHOW HIDE</title>
+</head>
+<body>
+  <div class="tab-inner">
+    <input type="radio" name="tabmenu" id="tab1" checked>
+    <input type="radio" name="tabmenu" id="tab2">
+    <input type="radio" name="tabmenu" id="tab3">
+    <div class="content slide1" >
+      <img src="images/selector-1/slide-01.jpg">
+    </div>
+    <div class="content slide2">
+      <img src="images/selector-1/slide-02.jpg">
+    </div>
+    <div class="content slide3">
+      <img src="images/selector-1/slide-03.jpg">
+    </div>
+    <div class="btn">
+      <label for="tab1"></label>
+      <label for="tab2"></label>
+      <label for="tab3"></label>
+    </div>
+  </div>
+</body>
+</html>
+
+<!-- tab-inner 담기 input radio 동일한 이름을 가지고 있어야하고 id는 짝궁(btn label과)을 만들어 줘야한다.  -->
