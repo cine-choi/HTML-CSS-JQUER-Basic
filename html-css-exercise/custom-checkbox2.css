@@ -1,0 +1,52 @@
+@import 
+url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import
+url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+body {
+  font-family: 'Raleway', sans-serif;
+  color: #222;
+  line-height: 1.5em;
+  font-weight: 300;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+a {
+  text-decoration: none; 
+}
+form input[type=checkbox]{
+  display: none;
+}
+form label {
+  display: block;
+}
+form label:before {
+  content: '\f00c';
+  font-family: fontawesome;
+  width: 14px;
+  height: 14px;
+  border-radius: 3px;
+  margin-right: 3px;
+  font-size: 13px;
+  vertical-align: middle;
+  display: inline-block;
+  text-align: center;
+  line-height: 14px;
+  color: transparent;
+  border: 1px solid #333;
+  transition: 0.2s;
+  
+}
+form input[type=checkbox]:checked + label:before {
+  background-color: crimson;
+  color: white;
+  border: transparent;
+}
+form input[type=checkbox] + label:active::before {
+  transform: scale(0);
+
+}
+
