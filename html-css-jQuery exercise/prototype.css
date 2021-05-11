@@ -1,0 +1,37 @@
+section {
+  /* border: 1px solid #000; */
+  width: 800px;
+}
+.btn {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  margin-left: 10px;
+}
+.btn li {
+  float: left;
+  border: 1px solid #000;
+  background-color: gray;
+}
+.btn li.active {
+  background-color: white;
+}
+.tabs {}
+.tabs div {
+  background-color: #fff;
+  padding: 20px;
+  height: 250px;
+  box-sizing: border-box;
+  display: none;
+}
+.tabs div.active {
+  display: block;
+}
+.tabs div h2 {
+  text-align: center;
+}
+.tabs div img {
+  float: left;
+  margin-right: 10px;
+}

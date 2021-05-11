@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>탭 메뉴 콘텐츠 - 스타일 01(with jQuery)</title>
+  <link rel="stylesheet" href="tap-menu-style-01.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+  <div class="testimonial-section">
+    <h1><span>CodingWorks</span> Publishing Online Class with Inflearn</h1>
+    <div class="testimonial-pic">
+      <img class="active" src="images/tap-menu-01/face-01.jpg" data-alt="tab1">
+      <img src="images/tap-menu-01/face-02.jpg" data-alt="tab2">
+      <img src="images/tap-menu-01/face-03.jpg" data-alt="tab3">
+      <img src="images/tap-menu-01/face-04.jpg" data-alt="tab4">
+    </div>
+    <div class="testimonial">
+      <div class="content active" id="tab1">
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias fuga molestiae praesentium itaque. Quaerat, asperiores tempore architecto nisi ipsa assumenda, molestias praesentium autem alias animi saepe harum veniam accusamus maiores placeat ipsam cum debitis perferendis fugit, sed nulla officiis vitae? Cumque magnam vel quisquam exercitationem sequi voluptatum dolore perferendis earum laborum repudiandae? Fuga omnis itaque tempora fugiat, molestiae sequi temporibus quis possimus? Quia iure ratione quis dolorum eveniet consequatur mollitia doloremque molestiae quibusdam quasi! Sunt vero doloremque quasi corrupti quos?
+        </p>
+        <p>Sally, Web Desginer</p>
+      </div>
+      <div class="content" id="tab2">
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias fuga molestiae praesentium itaque. Quaerat, asperiores tempore architecto nisi ipsa assumenda, molestias praesentium autem alias animi saepe harum veniam accusamus maiores placeat ipsam cum debitis perferendis fugit, sed nulla officiis vitae? Cumque magnam vel quisquam exercitationem sequi voluptatum dolore perferendis earum laborum repudiandae? Fuga omnis itaque tempora fugiat, molestiae sequi temporibus quis possimus? Quia iure ratione quis dolorum eveniet consequatur mollitia doloremque molestiae quibusdam quasi! Sunt vero doloremque quasi corrupti quos?
+        </p>
+        <p>Amy, Graphic Designer</p>
+      </div>
+      <div class="content" id="tab3">
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias fuga molestiae praesentium itaque. Quaerat, asperiores tempore architecto nisi ipsa assumenda, molestias praesentium autem alias animi saepe harum veniam accusamus maiores placeat ipsam cum debitis perferendis fugit, sed nulla officiis vitae? Cumque magnam vel quisquam exercitationem sequi voluptatum dolore perferendis earum laborum repudiandae? Fuga omnis itaque tempora fugiat, molestiae sequi temporibus quis possimus? Quia iure ratione quis dolorum eveniet consequatur mollitia doloremque molestiae quibusdam quasi! Sunt vero doloremque quasi corrupti quos?
+        </p>
+        <p>Jung Ho, Developer</p>
+      </div>
+      <div class="content" id="tab4">
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias fuga molestiae praesentium itaque. Quaerat, asperiores tempore architecto nisi ipsa assumenda, molestias praesentium autem alias animi saepe harum veniam accusamus maiores placeat ipsam cum debitis perferendis fugit, sed nulla officiis vitae? Cumque magnam vel quisquam exercitationem sequi voluptatum dolore perferendis earum laborum repudiandae? Fuga omnis itaque tempora fugiat, molestiae sequi temporibus quis possimus? Quia iure ratione quis dolorum eveniet consequatur mollitia doloremque molestiae quibusdam quasi! Sunt vero doloremque quasi corrupti quos?
+        </p>
+        <p>Chris, Printing Desinger</p>
+      </div>
+    </div>
+  </div>
+  <script>
+    $('.testimonial-pic img').click(function(){
+      $(this).addClass('active')
+      $(this).siblings().removeClass('active')
+      $('.testimonial .content').removeClass('active')
+      $('#' + $(this).attr('data-alt')).addClass('active')
+      // tab1 -- $(this).attr('data-alt')
+    })
+  </script>
+</body>
+</html>
