@@ -1,0 +1,243 @@
+/* Import Local CSS */
+@import url('reset.css');
+@import url('variables.css');
+@import url('layout.css');
+
+* {
+    font-family: var(--primary-kr);
+    font-weight: 300;
+}
+body {
+    margin: 0;
+    color: var(--dark-gray);
+    line-height: 1.5em;
+    font-size: 14px;
+}
+
+
+/* ##### common CSS ##### */
+.logo {
+    font-size: 32px;
+    font-family: var(--logo-en);
+}
+.btn-primary {
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+/* gnb CSS */
+
+.gnb {
+    border-top: 1px solid var(--gloudy-gray);
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+    /* position: absolute;
+    bottom: 0; */
+    width: 100%;
+    background-color: #fff;
+    
+}
+.gnb a {
+    text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.gnb a:nth-child(1) i {
+    font-size: 24px;
+}
+.gnb a i {
+    font-size: 20px;
+}
+.gnb a span {
+    display: block;
+    font-size: 13px;
+}
+
+/* Main-header CSS */
+.main-header {
+    height: 80px;
+    background-color: var(--crimson);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    /* padding: 0 15px; */
+    align-items: center;
+}
+.btn-back {
+    background-color: transparent;
+    font-size: 22px;
+    border: none;
+    color: #fff;
+    flex: 1;
+}
+.main-header .lo go {
+    font-size: 26px;
+    margin: 0;
+    flex: 6;
+    text-align: center;
+}
+.user-alarm {
+    flex: 1;
+    font-size: 22px;
+}
+.user-alarm span {
+    position: relative;
+}
+.user-alarm span em {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+    text-align: center;
+    font-style: normal;
+    background-color: var(--royalblue);
+    border-radius: 50%;
+    right: -4px;
+    top: 0;
+    font-size: 11px;
+}
+
+
+/* ##### Preloading html  ##### */
+.container.preloading {
+    height: 750px; 
+}
+.preloading-inner {
+    height: inherit;
+    background: url(../../images/preloading-back.jpg) no-repeat top -100px left -130px;
+    background-size: cover;
+}
+.heading-preloading {
+    position: absolute;
+    top: 50px;
+    left: 30px;
+}
+.heading-preloading .logo {
+    font-size: 28px;
+    color: var(--crimson);
+    /* white-space: nowrap; */
+}
+.slogan {}
+.slogan span {
+    display: block;
+    color: #000000;
+    font-family: url(--secondary-kr);
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin: 0;
+}
+/* ##### Signin html  ##### */
+
+.signin {
+    height: 750px;
+}
+.signin-inner {}
+.signin-photo {
+    height: 250px;
+    background: url(../../images/signin-header.jpg) no-repeat;
+}
+.signin-content {
+    padding: 20px;
+}
+.signin-header {
+    text-align: center;
+    color: #000000;
+}
+.signin-header .logo {
+    font-size: 26px;
+   margin-bottom: 0;
+}
+.signin-header p {
+    font-size: 16px;
+    font-weight: 400;
+}
+.signin-field {
+    display: flex;
+    flex-direction: column;
+}
+.signin-field input {
+    border: 2px solid var(--gainsboro);
+    border-radius: 20px;
+    transition: 0.4s;
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 10px;
+    padding-left: 15px;
+    
+}
+.signin-field input:focus {
+    border-color: var(--yellowgreen);
+    outline: none;
+}
+.signin-field input::placeholder {
+    color: var(--sliver-gray);
+}
+.signin-field input:focus::placeholder {
+    visibility: hidden;
+}
+.status {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0 12px 0;
+    color: var(--dark-black);
+    font-size: 14px;
+}
+.status label input {
+    display: none;
+}
+.status input[type=checkbox] + em {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    transform: translateY(5px);
+    margin-right: 3px;
+}
+.status input[type=checkbox] + em:before {
+    content: '\F26B';
+    font-family: bootstrap-icons;
+    font-style: normal;
+    color: var(--dark-gray);
+    display: inline-block;
+    transform: translateY(-3px);
+
+}
+.status input[type=checkbox]:checked +em::before {
+    color: var(--crimson);
+}
+.btn-signin {
+    margin-bottom: 10px;
+    background-color: var(--yellowgreen);
+
+}
+.join-member {
+    text-align: center;
+    margin: 10px 0;
+}
+.join-member a {
+    text-decoration: underline;
+}
+.easy-signin {
+    text-align: center;
+}
+.easy-signin span {
+    font-size: 14px;
+}
+.social-btn {   
+    width: 100%;
+    margin-top: 10px;
+}
+.social-btn a {
+    margin-right: 5px;
+}
+/* ##### Resister html  ##### */
+
+/* ##### Main html  ##### */
