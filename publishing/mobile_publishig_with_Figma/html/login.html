@@ -9,6 +9,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>    
     <!-- Custom CSS & JS -->
     <link rel="stylesheet" href="../assets/css/shared/style.css">
+    <script src="../assets/js/main.js"></script>
 </head>
 <body>
     <div class="container signin">
@@ -23,7 +24,7 @@
                     <input type="email" placeholder="이메일 입력">
                     <input type="password" placeholder="비밀번호 입력">
                 </div>
-                <div class="status">
+                <div class="status custom-chk">
                     <label>
                         <input type="checkbox"> <em></em> 자동 로그인
                     </label>
@@ -44,13 +45,9 @@
                     </div>
                 </div>
             </div>
-            <div class="gnb">
-                <a href="#none"><i class="bi bi-list"></i><span>카테고리</span></a>
-                <a href="#none"><i class="bi bi-search"></i> <span>검색</span></a>
-                <a href="#none"><i class="bi bi-house"></i><span>홈</span></a>
-                <a href="#none"><i class="bi bi-person-circle"></i><span>나의정보</span></a>
-                <a href="#none"><i class="bi bi-cart"></i><span>장바구니</span></a>
-            </div>
+            <!-- GNB include -->
+            <div data-include-path="gnb.html"></div>
+            <!-- GNB include -->
         </div>
     </div>
 </body>
